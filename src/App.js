@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import { gsap } from "gsap"
 
 import Home from './screens/Home'
 // import Chat from './screens/Chat'

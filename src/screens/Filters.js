@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
+import Chat from "./Chat"
 
 import "../styles/Filter.css"
 
@@ -19,6 +20,7 @@ export default function Filters()  {
                     <div className="mass"><Filtre select="mass" /></div>
                     </div>
                 </div> 
+                <Chat />
 
             </div>
         )
