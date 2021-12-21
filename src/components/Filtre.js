@@ -22,7 +22,6 @@ const Filtre = ({select}) => {
             <select name={select}>
                 <option value="">{select}...</option>
                 {selectedFilter.map((data) => {
-                console.log('test data', data);
                 return <option value={data}>{data}</option>
                 })}             
             </select>

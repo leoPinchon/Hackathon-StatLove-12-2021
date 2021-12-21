@@ -3,9 +3,14 @@ import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
 import Chat from "./Chat"
 
+
 import "../styles/Filter.css"
 
 export default function Filters()  {
+
+
+
+
         return (
             <div className="filters">
                 <Header />
@@ -21,6 +26,13 @@ export default function Filters()  {
                     </div>
                 </div> 
                 <Chat />
+                <p>Et ici le Chat</p>
+                <p>Et ici le Chat</p>
+                <p>Et ici le Chat</p>
+                <p>Et ici le Chat</p>
+                <p>Et ici le Chat</p>
+                <p>Et ici le Chat</p>
+
 
             </div>
         )
