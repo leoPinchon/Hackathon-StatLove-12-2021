@@ -1,17 +1,37 @@
-import 
+import { useState, useEffect } from 'react'
 
-const Filtre = (props) => {
+const Filtre = ({select}) => {
     
     const [characters, setCharacters] = useState([])
 
+    useEffect(() => {
+        const getData = () => {
+            fetch(`https://miadil.github.io/starwars-api/api/all.json`)
+            .then((res) => res.json())
+            .then((res) => console.log('test res', res) || setCharacters(res));
+        }
+        getData()
+    }, [])
+
+    console.log('test filter 2', characters)
+
+    const selectedFilter = characters.reduce((acc, character) =>
+    acc.includes(character.select) ? acc : acc.concat(character.select),
+    [])
+
+    console.log('test filter', selectedFilter)
+
     return (
         <div>
-            <select name={props.genre}>
-                <option value="">{props.genre}</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <select name={select}>
+                <option value="">{select}...</option>
+                {selectedFilter.map((data) => {
+                console.log('test data', data);
+                return <option value={data}>{data}</option>
+                })}             
             </select>
         </div>
     )
 }
+
+export default Filtre
