@@ -3,14 +3,15 @@ import "../styles/Home.css"
 import Galaxy from "../assets/galaxy01.png"
 
 import {Link} from "react-router-dom"
-import { gsap } from "gsap";
-import  { useRef, useEffect } from 'react'
+// import { gsap } from "gsap";
+// import  { useRef, useEffect } from 'react'
 
 export default function Home() {
-    const boxRef = useRef()
-    useEffect(() => {
- 
-        gsap.fromTo(".home-nav-galaxy", 2.2, {scaleX: 0}, {scaleX: 1, transformOrigin: "left", ease: "none"},)})
+    // const boxRef = useRef()
+    // useEffect(() => {
+    //     const from = gsap.from(".home-nav-galaxy", {duration: 4, x: 700,y: 500, ease: "easeIn"})
+    //     from.delay(3)
+    //     })
     return (
         <div className="home">
             <nav className="home-nav">
@@ -25,7 +26,7 @@ export default function Home() {
                     </p>
                 </ div>
             </nav>
-            <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" onClick={boxRef} />
+            <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>
         </div>
     )
 }

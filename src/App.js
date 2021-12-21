@@ -1,11 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import { gsap } from "gsap"
+// import Cards from './components/Cards';
+
+
 
 import Home from './screens/Home'
 // import Chat from './screens/Chat'
 import Filters from './screens/Filters'
-import Header from './components/Header'
+// import Header from './components/Header'
 
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
       <Route path="/filters" element={<Filters />} />
       {/* <Route path="/chat" element={<Chat />} /> */}
     </Routes>
+
 
     </div>
   );
