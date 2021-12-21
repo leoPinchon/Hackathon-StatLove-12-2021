@@ -6,6 +6,7 @@ export default function Chat () {
     return (
     <div className="Chat"> 
         <p>Ttest Chat</p>
+        <Cards />
     </div>
     )
 

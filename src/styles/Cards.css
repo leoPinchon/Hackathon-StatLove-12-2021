@@ -34,6 +34,10 @@
     transition: 0.5s;
 }
 
+.card-content {
+    margin-top: -30px
+}
+
 .card:hover .card-content{
     opacity: 1;
     transform:translateY(-20px)
@@ -81,7 +85,7 @@
 .card-info{
     position: absolute;
     /* display: none; */
-    bottom:30px;
+    bottom: 0;
     color: var(--color-white);
 }
 
