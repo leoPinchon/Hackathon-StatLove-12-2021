@@ -20,5 +20,3 @@ export default function Filters()  {
             </div>
         )
 }
-
-export default Filters

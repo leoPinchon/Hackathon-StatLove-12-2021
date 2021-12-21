@@ -1,26 +1,22 @@
 import { useState, useEffect } from 'react'
 
 const Filtre = ({select}) => {
-    
+
     const [characters, setCharacters] = useState([])
 
     useEffect(() => {
         const getData = () => {
             fetch(`https://miadil.github.io/starwars-api/api/all.json`)
             .then((res) => res.json())
-            .then((res) => console.log('test res', res) || setCharacters(res));
+            .then((res) => setCharacters(res));
         }
         getData()
     }, [])
-
-    console.log('test filter 2', characters)
-
-    const selectedFilter = characters.reduce((acc, character) =>
-    acc.includes(character.select) ? acc : acc.concat(character.select),
-    [])
-
-    console.log('test filter', selectedFilter)
-
+    
+        let selectedFilter = characters.reduce((acc, character) =>
+        acc.includes(character[select]) ? acc : acc.concat(character[select]),
+        [])
+    
     return (
         <div>
             <select name={select}>
