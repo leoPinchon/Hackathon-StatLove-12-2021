@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const Filtre = ({select}) => {
+const Filtre = ({select, nameDisplay,}) => {
 
     const [characters, setCharacters] = useState([])
 
@@ -20,7 +20,7 @@ const Filtre = ({select}) => {
     return (
         <div>
             <select name={select}>
-                <option value="">{select}...</option>
+                <option value="">{nameDisplay}...</option>
                 {selectedFilter.map((data) => {
                 console.log('test data', data);
                 return <option value={data}>{data}</option>
