@@ -1,0 +1,103 @@
+body {
+background: rgb(54,13,65);
+background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100%);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    margin-left: 50px;
+    margin-top: 60px;
+    z-index: 1000;
+    height: auto;
+}
+
+.home-nav-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+
+}
+
+.home-nav-input {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 15px;
+}
+
+.home-nav-input_id {
+    margin-bottom: 7px;
+    width: 200px;
+    height: 30px;
+    background: var(--color-white) 0% 0% no-repeat padding-box;
+    border: 3px solid var(--color-second);
+    border-radius: 26px;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: var(--color-first);
+    opacity: 1; 
+    font-size: 15px;
+    text-align:center;
+}
+
+
+.home-nav-input_password {
+    width: 200px;
+    height: 30px;
+    background: var(--color-white) 0% 0% no-repeat padding-box;
+    border: 3px solid var(--color-second);
+    border-radius: 26px;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: var(--color-first);
+    opacity: 1; 
+    font-size: 15px;
+    text-align:center;
+    
+}
+
+.home-nav-button {
+    /* Layout Properties */
+    color: var(--color-white);
+    width: 52px;
+    height: 41px;
+    border-radius: 26px;
+    border: 3px solid var(--color-white);
+    background: transparent linear-gradient(150deg, #703AC7 0%, #E461B0 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 16px/20px PT Sans;
+    letter-spacing: 0px;
+}
+
+.home-nav-text {
+    margin-top: 30px;
+    line-height: 1.2;
+    color : var(--color-white);
+    font-style: italic;
+    width : 250px;
+}
+
+.home-nav-galaxy {
+    width: 701px;
+    height: auto;
+    position: fixed;
+    bottom: -120px;
+    right: -150px;
+}
+
+
+@media (max-width:768px){
+    .home-nav {width: 80%; height:60vh; justify-content: space-around;}
+    .home-nav-galaxy { width: 620px; right: -250px;}
+}
