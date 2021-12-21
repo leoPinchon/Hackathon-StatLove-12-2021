@@ -1,5 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
+import Cards from './components/Cards';
+
+
 
 import Home from './screens/Home'
 // import Chat from './screens/Chat'
@@ -17,6 +20,7 @@ const App = () => {
       <Route path="/filters" element={<Filters />} />
       {/* <Route path="/chat" element={<Chat />} /> */}
     </Routes>
+
 
     </div>
   );
