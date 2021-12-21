@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
 
-import Chat from './components/Chat'
-import Filters from './components/Filters'
-import Header from './components/Header'
-import Home from './components/Home'
+import Chat from './screens/Chat'
+import Filters from './screens/Filters'
+import Header from './screens/Header'
+import Home from './screens/Home'
 
 const App = () => {
 
