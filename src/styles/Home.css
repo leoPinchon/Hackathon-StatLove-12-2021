@@ -19,6 +19,7 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
     margin-left: 50px;
     margin-top: 60px;
     z-index: 1000;
+    height: auto;
 }
 
 .home-nav-title {
@@ -49,13 +50,6 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
     text-align:center;
 }
 
-/* .home-nav-input_id:placeholder {
-    letter-spacing: 0px;
-    color: var(--color-first);
-    opacity: 1; 
-    font-size: 15px;
-    text-align:center;
-} */
 
 .home-nav-input_password {
     width: 200px;
@@ -104,5 +98,6 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
 
 
 @media (max-width:768px){
-    .home-nav {width: 80%; }
+    .home-nav {width: 80%; height:60vh; justify-content: space-around;}
+    .home-nav-galaxy { width: 620px; right: -250px;}
 }

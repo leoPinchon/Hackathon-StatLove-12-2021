@@ -1,0 +1,23 @@
+.filters {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.filters-galaxy {
+    width: 550px;
+    height: auto;
+    position: fixed;
+    top: -250px;
+    right: -250px;
+}
+
+.filters-galaxy2 {
+    width: 600px;
+    height: auto;
+    position: fixed;
+    bottom: -200px;
+    left: -460px;
+}
