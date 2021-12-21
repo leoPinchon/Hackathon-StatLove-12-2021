@@ -1,5 +1,5 @@
 /* ------------------- */
-/* Polices         */
+/*      Polices        */
 /* ------------------- */
 @import url("https://p.typekit.net/p.css?s=1&k=aep8ehj&ht=tk&f=262.1128&a=8149494&app=typekit&e=css");
 
@@ -17,8 +17,10 @@ font-display:auto;font-style:normal;font-weight:700;
 
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 /* ------------------- */
-/* Variables           */
+/*      Variables      */
 /* ------------------- */
 
 :root{
@@ -62,5 +64,8 @@ body{
 
 h1{
   font-family: var(--title-font);
+  color : var(--color-white);
+  font-size: 2em;
 }
+
 
