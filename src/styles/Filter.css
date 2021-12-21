@@ -21,3 +21,16 @@
     bottom: -200px;
     left: -460px;
 }
+
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px; 
+}
+
+.gender { grid-area: 1 / 1 / 2 / 2; }
+.species { grid-area: 1 / 2 / 2 / 3; }
+.height { grid-area: 2 / 1 / 3 / 2; }
+.mass { grid-area: 2 / 2 / 3 / 3; } 

@@ -7,11 +7,11 @@ import Home from './screens/Home'
 import Filters from './screens/Filters'
 import Header from './components/Header'
 
+
 const App = () => {
 
   return (
     <div className="App">
-
     {/* <Header /> */}
     <Routes>
       <Route path="/" element={<Home />} />
