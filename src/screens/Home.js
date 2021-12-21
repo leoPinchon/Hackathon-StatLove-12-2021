@@ -1,8 +1,16 @@
 import "../styles/Home.css"
+
 import Galaxy from "../assets/galaxy01.png"
+
 import {Link} from "react-router-dom"
+import { gsap } from "gsap";
+import  { useRef, useEffect } from 'react'
 
 export default function Home() {
+    const boxRef = useRef()
+    useEffect(() => {
+        const top = gsap.to(".home-nav-galaxy", {duration: 3,ease: "none"} )
+        top.delay(2)})
     return (
         <div className="home">
             <nav className="home-nav">
@@ -17,7 +25,7 @@ export default function Home() {
                     </p>
                 </ div>
             </nav>
-            <img className="home-nav-galaxy" src={Galaxy} alt="galaxy"></img>
+            <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ref={boxRef} />
         </div>
     )
 }
