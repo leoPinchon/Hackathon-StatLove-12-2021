@@ -112,6 +112,8 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
 }
 
 
+
+
 @media (max-width:768px){
     .home-nav-galaxy { width: 620px; right: -250px;}
     .home-nav-vaisseau {
