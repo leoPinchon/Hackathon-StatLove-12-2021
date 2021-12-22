@@ -3,6 +3,8 @@ import "../styles/Home.css"
 import Galaxy from "../assets/galaxy01.png"
 
 import {Link} from "react-router-dom"
+import Burger from "../components/Burger"
+
 // import { gsap } from "gsap";
 // import  { useRef, useEffect } from 'react'
 
@@ -16,6 +18,7 @@ export default function Home() {
         <div className="home">
             <nav className="home-nav">
                 <h1 className="home-nav-title">SATURDAY<br/>NIGHT<br/>ROULETTE</h1>
+                <Burger> </Burger>
                 <div className="home-nav-input">
                     <input className="home-nav-input_id" type="text" name="" placeholder="Identifiant"></input>
                     <input className="home-nav-input_password" type="password" name="" placeholder="Mot de passe"></input>

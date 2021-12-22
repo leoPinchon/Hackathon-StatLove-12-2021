@@ -18,7 +18,6 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
     width: 30%;
     margin-left: 50px;
     margin-top: 60px;
-    z-index: 1000;
     height: auto;
 }
 
@@ -96,12 +95,12 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
     right: -150px;
     border-radius: 50%;
     box-shadow:  -0.2em 0 .7em black;
+    z-index: -1;
    
 
 }
 
 
 @media (max-width:768px){
-    .home-nav {width: 80%; height:60vh; justify-content: space-around;}
     .home-nav-galaxy { width: 620px; right: -250px;}
 }
