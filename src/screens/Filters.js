@@ -3,12 +3,13 @@ import Header from "../components/Header"
 import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
 import Chat from "./Chat"
+import {useState} from "react"
 
 
 import "../styles/Filter.css"
 
 export default function Filters()  {
- const [charactersTabFiltered, setCharactersTabFiltered] = useState([]);
+ const [charactersTabFiltered, setCharactersTabFiltered] = useState();
   
 
 
