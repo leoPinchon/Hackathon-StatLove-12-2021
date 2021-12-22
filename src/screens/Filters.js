@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
 import ChatPage from "./ChatPage"
+import Timer from "../components/Timer"
 
 import {useState} from "react"
 
@@ -35,7 +36,12 @@ export default function Filters()  {
                     </div>
                 </div> 
                 <div className="filters-Chat">
+<<<<<<< HEAD
                     <ChatPage  />
+=======
+                    <ChatPage /> 
+                    <Timer></Timer>
+>>>>>>> c60ea518570d5f3b6adeeb5c74938691aa53e48a
                
                 </div>
 
