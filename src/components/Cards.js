@@ -20,7 +20,8 @@ export default function Cards(props) {
   }, [])
 
   const randomNumber = Math.floor(Math.random() * 88)
-  console.log(randomNumber)
+
+  
     
 
   return (
