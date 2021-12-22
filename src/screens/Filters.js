@@ -35,7 +35,7 @@ export default function Filters()  {
                     </div>
                 </div> 
                 <div className="filters-Chat">
-                    <ChatPage />
+                    <ChatPage  />
                
                 </div>
 

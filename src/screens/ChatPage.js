@@ -4,7 +4,7 @@ import '../styles/ChatPage.css'
 
 const ChatPage = () => {
     return (
-    <div className="chatHolder">
+    <div className="chatHolder2">
         <Chat />
     </div>        
     )

@@ -15,11 +15,7 @@ export default function Home() {
         from.delay(0.5)
         })
 
-    const nameId = () => {
-        let inputid = document.querySelector(".home-nav-input_id").values
-        console.log(inputid)
-        
-    }
+
 
 
    let knowActive = false;

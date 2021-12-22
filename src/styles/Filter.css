@@ -73,7 +73,7 @@ select option {
 
 .filter-button {
     color: var(--color-white);
-    width: 120px;
+    width: auto;
     height: 41px;
     border-radius: 26px;
     border: 3px solid var(--color-white);
@@ -82,8 +82,8 @@ select option {
     text-align: center;
     font: normal normal normal 16px/20px PT Sans;
     letter-spacing: 0px;
+    padding: 0 8px;
 }
-
 .filters-Chat {
 
     margin-top: 40px;;
