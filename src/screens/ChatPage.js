@@ -1,9 +1,11 @@
-import ChatInput from "../components/ChatInput"
+import ChatMessages from '../components/ChatMessages'
+
+import '../styles/ChatPage.css'
 
 const ChatPage = () => {
     return (
-    <div>
-        < ChatInput />
+    <div className="chatHolder">
+        <ChatMessages />
     </div>        
     )
 }
