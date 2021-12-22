@@ -1,16 +1,26 @@
 export const robotAnswers = [
     //0 
-    ["Heeyo", "Coucou !", "Hey!", "Hi there!"], 
+    ["Bonjour !", "Coucou !", "Salut!", "Yo!"], 
     //1
     [
-      "Fine... how are you?",
-      "Pretty well, how are you?",
-      "Fantastic, how are you?"
+      "Bien merci!",
+      "Ca va :)",
+      "Niquel! :)",
+      "Très bien ^^"
     ],
 
     [
-      "yep",
-      "nopr?",
-      "allright"
+      "Hey!",
+      "Hi !",
+      "Hello :)",
+      "Yo!"
+    ],
+
+    [
+      "Fine... how are you?",
+      "Pretty well, how are you?",
+      "Fantastic, how are you?",
+      "Fine, you?"
     ]
+
   ]

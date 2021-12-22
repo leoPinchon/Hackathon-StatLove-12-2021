@@ -5,7 +5,7 @@ import './App.css';
 
 
 import Home from './screens/Home'
-import ChatPage from './screens/ChatPage'
+import Chat from './components/Chat'
 import Filters from './screens/Filters'
 import ChatBot from './components/ChatBot'
 import KnowMore from "./components/KnowMore"
@@ -22,8 +22,7 @@ const App = () => {
         <Route path="/KnowMore" element={<KnowMore />}/>
       </Route>
       <Route path="/filters" element={<Filters />} />
-      <Route path="/chat" element={<ChatPage />} >
-        <Route path="/chat/bot" element={<ChatBot />} />
+      <Route path="/chat" element={<Chat />} >
       </Route>
     </Routes>
 
