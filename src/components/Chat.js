@@ -4,11 +4,10 @@ import {randomAnswersArray} from '../datas/randomAnswersArray'
 import { useState } from 'react'
 import '../styles/ChatPage.css'
 import ChatMessages from './ChatMessages'
+import Cards from './Cards'
 
-const ChatTest = () => {
-    
-    
-    const [msg, setMsg] = useState([]) 
+const ChatTest = ({msg, setMsg}) => {
+  
     const [inputContent, setInputContent] = useState('') 
     
     const response = (triggersArray, robotAnswersArray, text ) => {        
@@ -34,7 +33,12 @@ const ChatTest = () => {
         let res = response(triggers, robotAnswers, inputContent)
         newMsgArr.push(res)
         setMsg(newMsgArr)
+        setInputContent("")
+        
+  
     }
+
+    
 
     return (
     <div className="chatHolder">      
@@ -64,6 +68,7 @@ const ChatTest = () => {
                 <i class="far fa-smile-beam"></i>
                 <i className="far fa-paper-plane validationBtn" ></i>
                 </div>
+                
             </button>
         </div>
         
