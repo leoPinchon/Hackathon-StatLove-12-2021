@@ -15,15 +15,10 @@ export default function Home() {
         from.delay(0.5)
         })
 
-   const more = () => {
-       const homeGalaxy = document.querySelector(".home-nav-galaxy")
-       
-       const more = document.querySelector(".home-nav-down")
-       more.scrollIntoView({behavior: "smooth"})
-       homeGalaxy.style.width = 0
     
 
-   }
+
+   let knowActive = false;
 
     return (
         <div className="home">
@@ -38,7 +33,7 @@ export default function Home() {
                     <p className="home-nav-text_text">"Venez trouver l'amour dans la profondeur de la galaxy"
                     </p>
                 </ div>
-                <Link to="/KnowMore" onClick={() => more()} ><img className="home-nav-down" src={Down} alt="down"></img></Link>
+                <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMoreActive" : "KnowMore"}><img className="home-nav-down" src={Down} alt="down"></img></Link>
             </nav>
             <Outlet />
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>

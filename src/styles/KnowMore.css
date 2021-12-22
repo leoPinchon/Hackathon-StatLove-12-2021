@@ -1,0 +1,17 @@
+.KnowMore {
+    position: absolute;
+    top : 0;
+    left:-300px;
+    /* transform: translateX(-300px); */
+    opacity: 1;
+    transition: 0.5s;
+    border: 1px black solid,
+}
+
+.KnowMoreActive {
+    /* transform: translateX(0); */
+    left: 40%;
+    opacity: 1;
+    top: 60px;
+    transition: 0.5s;
+}

@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
+import "../styles/KnowMore.css"
+
 const KnowMore = () => {
+    
+
+    // onClick={knowActive=!knowActive} className={knowActive ? "KnoMoreAvtive" : "KnowMore"}
     return(
         <div className="KnowMore">
-            <button onClick={() => <Link path="/"></Link>}>Retourner à la Home Page</button>
             <p>Test coucou knowMore</p>
             <p>Test coucou knowMore</p>
             <p>Test coucou knowMore</p>
@@ -19,28 +23,7 @@ const KnowMore = () => {
             <p>Test coucou knowMore</p>
             <p>Test coucou knowMore</p>
             <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
-            <p>Test coucou knowMore</p>
+   
         </div>
     )
 }
