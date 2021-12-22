@@ -1,11 +1,11 @@
-import ChatMessages from '../components/ChatMessages'
+import Chat from '../components/Chat'
 
 import '../styles/ChatPage.css'
 
 const ChatPage = () => {
     return (
     <div className="chatHolder">
-        <ChatMessages />
+        <Chat />
     </div>        
     )
 }

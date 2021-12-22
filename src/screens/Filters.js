@@ -2,7 +2,7 @@
 import Header from "../components/Header"
 import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
-import Chat from "./Chat"
+import ChatPage from "./ChatPage"
 
 import {useState} from "react"
 
@@ -27,20 +27,17 @@ export default function Filters()  {
                         <div className="filter-container">
                             <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="gender" nameDisplay="Genre" /></div>
                             <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="species" nameDisplay="Espèces"/></div>
-                            <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="height" nameDisplay="Taille"/></div>
-                            <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="mass" nameDisplay="Poids"/></div>
+                            {/* <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="height" nameDisplay="Taille"/></div>
+                            <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="mass" nameDisplay="Poids"/></div> */}
                             <div className="holder-filter-button"><button className="filter-button">Commencer</button></div>
                         </div>
+                       
                     </div>
                 </div> 
-                <Chat />
-                <p>Et ici le Chat</p>
-                <p>Et ici le Chat</p>
-                <p>Et ici le Chat</p>
-                <p>Et ici le Chat</p>
-                <p>Et ici le Chat</p>
-                <p>Et ici le Chat</p>
-
+                <div className="filters-Chat">
+                    <ChatPage />
+               
+                </div>
 
             </div>
         )

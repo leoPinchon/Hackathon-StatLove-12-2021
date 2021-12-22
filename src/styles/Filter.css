@@ -68,7 +68,7 @@ select option {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 205px;
+    top: 175px;
 }
 
 .filter-button {
@@ -82,6 +82,15 @@ select option {
     text-align: center;
     font: normal normal normal 16px/20px PT Sans;
     letter-spacing: 0px;
+}
+
+.filters-Chat {
+
+    margin-top: 40px;;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width:768px){
