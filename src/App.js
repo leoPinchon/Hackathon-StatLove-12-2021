@@ -7,7 +7,6 @@ import './App.css';
 import Home from './screens/Home'
 import Chat from './components/Chat'
 import Filters from './screens/Filters'
-import ChatBot from './components/ChatBot'
 import KnowMore from "./components/KnowMore"
 // import Header from './components/Header'
 
