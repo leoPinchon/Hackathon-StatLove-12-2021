@@ -13,7 +13,7 @@ const Ul = styled.ul`
 
     @media (max-width: 768px) {
             flex-flow: column nowrap;
-            background-color: #5d33cc;
+            background: linear-gradient(150deg, #703AC7 0%, #E461B0 100%) 0% 0% no-repeat padding-box;
             position:fixed;
             transform: ${({ open }) => open ? 'translateX(0)': 'translateX(100%)'};
             transition: transform 0.3s ease-in-out;

@@ -93,7 +93,8 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
     position: fixed;
     bottom: -120px;
     right: -150px;
-    position: 1000
+    position: 1000;
+    z-index: -1;
 
 }
 
