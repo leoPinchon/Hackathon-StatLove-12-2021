@@ -89,17 +89,33 @@ background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100
 }
 
 .home-nav-galaxy {
-    width: 701px;
+    width: 600px;
     height: auto;
     position: fixed;
     bottom: -120px;
     right: -150px;
-    border-radius: 50%;
-    box-shadow:  -0.2em 0 .7em black;
+    position: 1000
+
 }
+
+.home-nav-vaisseau, .home-nav-vaisseau2, .home-nav-vaisseau3 {
+    display : none;
+}
+
+
 
 
 @media (max-width:768px){
     .home-nav {width: 80%;justify-content: space-around;}
     .home-nav-galaxy { width: 620px; right: -250px;}
+    .home-nav-vaisseau {
+        display: block;
+        width: 20px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        transform: rotate(45deg);
+    }
+    
+    
 }
