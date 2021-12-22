@@ -5,9 +5,10 @@ import Cards from './components/Cards';
 
 
 import Home from './screens/Home'
-// import Chat from './screens/Chat'
+import ChatPage from './screens/ChatPage'
 import Filters from './screens/Filters'
 import Header from './components/Header'
+import ChatBot from './components/ChatBot'
 
 
 const App = () => {
@@ -18,7 +19,9 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/filters" element={<Filters />} />
-      {/* <Route path="/chat" element={<Chat />} /> */}
+      <Route path="/chat" element={<ChatPage />} >
+        <Route path="/chat/bot" element={<ChatBot />} />
+      </Route>
     </Routes>
 
 
