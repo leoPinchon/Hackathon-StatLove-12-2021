@@ -2,7 +2,7 @@
 import Header from "../components/Header"
 import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
-import Chat from "./Chat"
+import ChatPage from "./ChatPage"
 
 import {useState} from "react"
 
@@ -35,13 +35,8 @@ export default function Filters()  {
                     </div>
                 </div> 
                 <div className="filters-Chat">
-                    <Chat />
-                    <p>Et ici le Chat</p>
-                    <p>Et ici le Chat</p>
-                    <p>Et ici le Chat</p>
-                    <p>Et ici le Chat</p>
-                    <p>Et ici le Chat</p>
-                    <p>Et ici le Chat</p>
+                    <ChatPage />
+               
                 </div>
 
             </div>
