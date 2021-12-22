@@ -13,7 +13,19 @@ import "../styles/Filter.css"
 
 export default function Filters()  {
  const [charactersTabFiltered, setCharactersTabFiltered] = useState([]);
-  
+
+ const [chatFull, setChatFull] = useState(false);
+
+
+ const [msg, setMsg] = useState([]) 
+
+ const changeChatFull = () => {
+    setChatFull(!chatFull)
+ }
+console.log(chatFull)
+//  let boll=chatFull
+//  setChatFull(!boll)
+ 
 
 
         return (
@@ -33,11 +45,11 @@ export default function Filters()  {
                           
                         </div>
                     </div>
-                       <Cards charactersTabFiltered={charactersTabFiltered}/>
+                       <Cards  msg={msg} setMsg={setMsg} changeChatFull={changeChatFull} chatFull={chatFull} charactersTabFiltered={charactersTabFiltered}/>
                 </div> 
                 <div className="filters-Chat">
 
-                    <ChatPage /> 
+                    <ChatPage msg={msg} setMsg={setMsg} /> 
                     <Timer></Timer>
 
                
