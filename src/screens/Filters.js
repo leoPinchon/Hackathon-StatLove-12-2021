@@ -1,4 +1,4 @@
-
+import Cards from "../components/Cards"
 import Header from "../components/Header"
 import Galaxy from "../assets/galaxy01.png"
 import Filtre from "../components/Filtre"
@@ -11,7 +11,7 @@ import {useState} from "react"
 import "../styles/Filter.css"
 
 export default function Filters()  {
- const [charactersTabFiltered, setCharactersTabFiltered] = useState();
+ const [charactersTabFiltered, setCharactersTabFiltered] = useState([]);
   
 
 
@@ -29,10 +29,10 @@ export default function Filters()  {
                             <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="species" nameDisplay="Espèces"/></div>
                             {/* <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="height" nameDisplay="Taille"/></div>
                             <div className="selector"><Filtre  setCharactersTabFiltered={setCharactersTabFiltered} select="mass" nameDisplay="Poids"/></div> */}
-                            <div className="holder-filter-button"><button className="filter-button">Commencer</button></div>
+                          
                         </div>
-                       
                     </div>
+                       <Cards charactersTabFiltered={charactersTabFiltered}/>
                 </div> 
                 <div className="filters-Chat">
                     <ChatPage />
