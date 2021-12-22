@@ -1,6 +1,6 @@
 .filters {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -86,8 +86,26 @@ select option {
 
 @media (max-width:768px){
    .filter-box {
-       display: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
    }
+ 
+   .filter-container{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .holder-filter-button {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+    }
+   
 
    .home-nav {
        margin-top: 20px;

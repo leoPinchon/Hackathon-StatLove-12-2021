@@ -4,7 +4,7 @@ import Galaxy from "../assets/galaxy01.png"
 import Vaisseau from "../assets/vaisseau.png"
 import Down from "../assets/down.png"
 
-import {Link} from "react-router-dom"
+import {Link, Outlet} from "react-router-dom"
 import { gsap } from "gsap";
 import  { useRef, useEffect } from 'react'
 
@@ -15,7 +15,10 @@ export default function Home() {
         from.delay(0.5)
         })
 
-   
+    
+
+
+   let knowActive = false;
 
     return (
         <div className="home">
@@ -30,8 +33,9 @@ export default function Home() {
                     <p className="home-nav-text_text">"Venez trouver l'amour dans la profondeur de la galaxy"
                     </p>
                 </ div>
-                <img className="home-nav-down" src={Down} alt="down"></img>
+                <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMoreActive" : "KnowMore"}><img className="home-nav-down" src={Down} alt="down"></img></Link>
             </nav>
+            <Outlet />
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>
             <img className="home-nav-vaisseau" src={Vaisseau} alt="vaisseau" ref={boxRef}></img>
 
