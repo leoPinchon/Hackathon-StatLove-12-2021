@@ -1,5 +1,6 @@
 import { triggers } from '../datas/triggers'
 import { robotAnswers } from '../datas/robotAnswers'
+import {randomAnswersArray} from '../datas/randomAnswersArray'
 import { useState } from 'react'
 import '../styles/ChatPage.css'
 import ChatMessages from './ChatMessages'
@@ -17,6 +18,10 @@ const ChatTest = () => {
                 if (triggersArray[x][y] === text) {
                     let items = robotAnswersArray[x];
                     item = items[Math.floor(Math.random() * items.length)];
+                }
+                else {
+                let items = randomAnswersArray[0];
+                    item = items[Math.floor(Math.random() * items.length)]
                 }
             }
         }
