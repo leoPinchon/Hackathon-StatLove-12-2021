@@ -29,6 +29,7 @@ const ChatTest = () => {
         let res = response(triggers, robotAnswers, inputContent)
         newMsgArr.push(res)
         setMsg(newMsgArr)
+        setInputContent("")
     }
 
     return (
