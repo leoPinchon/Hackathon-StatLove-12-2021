@@ -15,9 +15,7 @@ export default function Home() {
         from.delay(0.5)
         })
 
-    const pushDown = () => {
-        console.log("coucou")
-    }
+   
 
     return (
         <div className="home">
@@ -32,7 +30,7 @@ export default function Home() {
                     <p className="home-nav-text_text">"Venez trouver l'amour dans la profondeur de la galaxy"
                     </p>
                 </ div>
-                <img className="home-nav-down" src={Down} alt="down" onClick={() => pushDown()}></img>
+                <img className="home-nav-down" src={Down} alt="down"></img>
             </nav>
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>
             <img className="home-nav-vaisseau" src={Vaisseau} alt="vaisseau" ref={boxRef}></img>
