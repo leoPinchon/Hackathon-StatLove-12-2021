@@ -15,7 +15,11 @@ export default function Home() {
         from.delay(0.5)
         })
 
-    
+    const nameId = () => {
+        let inputid = document.querySelector(".home-nav-input_id").values
+        console.log(inputid)
+        
+    }
 
 
    let knowActive = false;
@@ -33,7 +37,7 @@ export default function Home() {
                     <p className="home-nav-text_text">"Venez trouver l'amour dans la profondeur de la galaxy"
                     </p>
                 </ div>
-                <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMoreActive" : "KnowMore"}><img className="home-nav-down" src={Down} alt="down"></img></Link>
+                <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMore" : "KnowMoreActive"}><img className="home-nav-down" src={Down} alt="down"></img></Link>
             </nav>
             <Outlet />
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>

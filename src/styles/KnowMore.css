@@ -1,7 +1,7 @@
 .KnowMore {
     position: absolute;
-    top : 0;
-    left:-300px;
+    top : 370px;
+    left:30px;
     /* transform: translateX(-300px); */
     opacity: 1;
     transition: 0.5s;
@@ -14,4 +14,5 @@
     opacity: 1;
     top: 60px;
     transition: 0.5s;
+    position: fixed;
 }
