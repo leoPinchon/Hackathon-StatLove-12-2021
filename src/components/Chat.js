@@ -33,27 +33,36 @@ const ChatTest = () => {
     }
 
     return (
-    <div className="chatHolder">  
-    {console.log('test', msg)}      
+    <div className="chatHolder">      
         <ul className="messagesHolder">
-            {msg.map((data, index) => (
+            {msg.map((data, index) => {
                 
-                <ChatMessages
+                return (
+                    <ChatMessages
                     key={index}
+                    index={index}
                     msg={data}
-                />
-            ))}
+                />)
+})}
         </ul>
-        <input 
-            value={inputContent} 
-            placeholder="Say hello" 
-            onChange={(e) => setInputContent(e.target.value)}>                
-        </input>
-        <button 
-            className="validationBtn" 
-            onClick={() => addMsg(inputContent)}>
-            Enter
-        </button>
+        <div className="ChatMessageInput">
+                <input 
+                    value={inputContent} 
+                    placeholder="Say hello" 
+                    onChange={(e) => setInputContent(e.target.value)}>     
+                </input>
+            
+            <button 
+                className="filter-button" 
+                onClick={() => addMsg(inputContent)}>
+                    <div className="iAlign">
+                <i class="fas fa-paperclip"></i>
+                <i class="far fa-smile-beam"></i>
+                <i className="far fa-paper-plane validationBtn" ></i>
+                </div>
+            </button>
+        </div>
+        
     </div>        
     )
 }
