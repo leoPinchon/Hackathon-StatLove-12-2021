@@ -9,7 +9,7 @@ export default function Chat () {
     
     return (
     <div className="Chat"> 
-        <Cards />
+        {/* <Cards /> */}
     </div>
     )
 
