@@ -6,7 +6,9 @@ const ChatMessages = ({msg}) => {
 
     return (
         <div>
-            <div className="msg">{msg}</div>
+            <div className={"msg"}>
+                <div>{msg}</div>
+            </div>
         </div>
     )
 }

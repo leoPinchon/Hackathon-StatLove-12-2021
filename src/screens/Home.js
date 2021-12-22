@@ -8,6 +8,7 @@ import {Link, Outlet} from "react-router-dom"
 import { gsap } from "gsap";
 import  { useRef, useEffect } from 'react'
 
+
 export default function Home() {
     const boxRef = useRef()
     useEffect(() => {
@@ -15,11 +16,7 @@ export default function Home() {
         from.delay(0.5)
         })
 
-    const nameId = () => {
-        let inputid = document.querySelector(".home-nav-input_id").values
-        console.log(inputid)
-        
-    }
+
 
 
    let knowActive = false;
@@ -42,6 +39,8 @@ export default function Home() {
             <Outlet />
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>
             <img className="home-nav-vaisseau" src={Vaisseau} alt="vaisseau" ref={boxRef}></img>
+
+            
 
         </div>
     )
