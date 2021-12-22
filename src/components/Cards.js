@@ -1,61 +1,52 @@
 import "../styles/Cards.css";
 // import {Helmet} from "react-helmet";
 
+import { useState, useEffect } from "react";
 
-import { useState, useEffect } from 'react'
+export default function Cards({ charactersTabFiltered }) {
+  // const [characters, setCharacters] = useState(charactersTabFiltered[0]);
 
-
-export default function Cards(props) {
-
-  const [characters, setCharacters] = useState(null)
-
-  useEffect(() => {
-      const getData = () => {
-          fetch(`https://miadil.github.io/starwars-api/api/all.json`)
-          .then((res) => res.json())
-          .then((res) => setCharacters(res));
-      }
-      getData()
-
-  }, [])
-
-  const randomNumber = Math.floor(Math.random() * 88)
-  console.log(randomNumber)
-    
-
-  return (
-  
-    <div className="card-section">
-      { characters != null &&
-      
-      <div className="card">
-        <div className="card-content">
-          <div className="card-img-box">
-            <img src={characters[randomNumber].image} alt="profil" />
-          </div>
-          <div className="card-content-box">
-            <h3>
-               {characters[randomNumber].name}
-              <br />
-              <span>{characters[randomNumber].species}</span>
-            </h3>
-            <h3> 
-              
-            </h3>
-            
-          </div>
-        
-        </div>
-        <ul className="card-info">
-            <li>Genre: {characters[randomNumber].gender}</li>
-            <li>Taille : {characters[randomNumber].height}</li>
-            <li >Résidence: {characters[randomNumber].homeworld}</li>
-          </ul>
-      </div>
-           }
-    </div>
-
-
+  const [characterCurrent, setCharacterCurrent] = useState(
+    charactersTabFiltered
   );
 
+  useEffect(
+    () => changeCharacter() || console.log("ùùùùùùùùùù", characterCurrent),
+    []
+  );
+  // setCharacterCurrent(characterCurrent[0]),[])
+
+  const changeCharacter = () => {
+    let count = Math.floor(Math.random() * charactersTabFiltered.length);
+    console.log("poulet", charactersTabFiltered);
+    setCharacterCurrent(charactersTabFiltered[count]);
+  };
+
+  return (
+    <div className="card-section">
+      {console.log("********************", charactersTabFiltered)}
+      {characterCurrent != null && (
+        <div className="card" onClick={changeCharacter}>
+          <div className="card-content">
+            <div className="card-img-box">
+              <img src={characterCurrent.image} alt="profil" />
+            </div>
+            <div className="card-content-box">
+              <h3>
+                {characterCurrent.name}
+                <br />
+                <span>{characterCurrent.species}</span>
+              </h3>
+              <h3></h3>
+            </div>
+          </div>
+          <ul className="card-info">
+            <li>Genre: {characterCurrent.gender}</li>
+            <li>Taille : {characterCurrent.height}</li>
+            <li>Résidence: {characterCurrent.homeworld}</li>
+          </ul>
+        </div>
+      )}
+    </div>
+  );
 }
