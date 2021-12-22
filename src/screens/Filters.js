@@ -48,8 +48,8 @@ console.log(chatFull)
                 </div> 
                 <div className="filters-Chat">
 
-                    <ChatPage msg={msg} setMsg={setMsg} /> 
                     <Timer></Timer>
+                    <ChatPage msg={msg} setMsg={setMsg} /> 
 
                
                 </div>

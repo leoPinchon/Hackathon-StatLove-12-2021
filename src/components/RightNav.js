@@ -31,7 +31,6 @@ const Ul = styled.ul`
             color: white;
             padding 18px 20px;
         }
-
 }`
 
 const RightNav = ({open}) => {
@@ -41,6 +40,8 @@ const RightNav = ({open}) => {
                 <NavLink to="/"><li>Mes matchs</li></NavLink>
                 <NavLink to="/filters"><li>Filtres</li></NavLink>
                 <NavLink to="/"><li>Se déconnecter</li></NavLink>
+                <NavLink to="/oops">Credits</NavLink>
+
             </Ul>
         </div>
     )

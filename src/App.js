@@ -9,7 +9,7 @@ import Chat from './components/Chat'
 import Filters from './screens/Filters'
 import KnowMore from "./components/KnowMore"
 // import Header from './components/Header'
-
+import NotFound from './screens/NotFound';
 
 const App = () => {
 
@@ -21,8 +21,8 @@ const App = () => {
         <Route path="/KnowMore" element={<KnowMore />}/>
       </Route>
       <Route path="/filters" element={<Filters />} />
-      <Route path="/chat" element={<Chat />} >
-      </Route>
+      <Route path="/chat" element={<Chat />} />
+      <Route path="/oops" element={<NotFound />} />
     </Routes>
 
 

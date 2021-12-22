@@ -34,7 +34,7 @@ export default function Home() {
                     <p className="home-nav-text_text">"Venez trouver l'amour dans la profondeur de la galaxy"
                     </p>
                 </ div>
-                <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMore" : "KnowMoreActive"}><img className="home-nav-down" src={Down} alt="down"></img></Link>
+                <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMore" : "KnowMoreActive"}><p>En savoir plus</p><img className="home-nav-down" src={Down} alt="down"></img></Link>
             </nav>
             <Outlet />
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>
