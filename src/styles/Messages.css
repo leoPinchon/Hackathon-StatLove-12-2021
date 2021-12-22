@@ -1,0 +1,8 @@
+.msg {
+    background: rgb(216, 226, 223);
+    color: rgb(12, 8, 241);
+    margin: 0.5em 0;
+    padding-left: 0.5em;
+    font-weight: bold;
+    font-size:1.2rem;
+}
