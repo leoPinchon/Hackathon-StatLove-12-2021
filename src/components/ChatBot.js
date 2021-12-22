@@ -1,71 +1,34 @@
-    import "./Form.css";
-    import Item from "./Item";
     import { useState } from "react";
-    import { v4 as uuidv4 } from "uuid";
+    import { triggers } from "../datas/triggers";
+    import { robotAnswers } from "../datas/robotAnswers";
 
-    const ChatBot = () => {
-      const [dataArr, setDataArr] = useState([
-        { txt: "Promener le chien", id: uuidv4() },
-        { txt: "Faire les courses", id: uuidv4() },
-        { txt: "Coder avec React", id: uuidv4() },
-      ]);
-    
-      const [stateInput, setStateInput] = useState();
-    
-     
-    
-      // const deleteElement = (id) => {
-      //   const filteresState = dataArr.filter((item) => item.id !== id);
-      //   setDataArr(filteresState);
-      // };
-    
-    
-      const addTodo = e =>{
-        e.preventDefault()
-        const newArr = [...dataArr]
-    
-        const newTodo ={}
-        newTodo.txt=stateInput
-        newTodo.id= uuidv4()
-    
-        newArr.push(newTodo)
-        setDataArr(newArr)
-        setStateInput('')
+    const ChatBot = ({input}) => {
+
+      const [messages, setMessages] = useState([])
+  
+      const response = (triggersArray, robotAnswersArray, text ) => {
+        let item;
+        for (let x = 0; x < triggersArray.length; x++) {
+          for (let y = 0; y < robotAnswersArray.length; y++) {
+            if (triggersArray[x][y] === text) {
+              let items = robotAnswersArray[x];
+              item = items[Math.floor(Math.random() * items.length)];
+            }
+          }
+        }
+        return setMessages(item)
+        
       }
-      const linkedInput = e => {
-        // console.log(e)
-        setStateInput(e)
-      }
-    
-     
-    
+      // console.log('Coucou');
       return (
+
         <div>
-          <section className="todo">
-            <h1>Todo-List</h1>
-            <form onSubmit={e => addTodo(e)} className="form">
-              <label htmlFor="todo">Chose à faire</label>
-              <input value={stateInput}
-              onInput={e=> linkedInput(e.target.value)}
-              type="text" id="todo" />
-              <button className="btn-add">Ajouter</button>
-            </form>
-    
-            <h2>Liste des choses à faire :</h2>
-            <ul className="list-group">
-              {dataArr.map((data) => (
-                <Item
-                  key={data.id}
-                  id={data.id}
-                  txt={data.txt}
-                  // delFunc={deleteElement}
-    
-                />
-              ))}
-            </ul>
-          </section>
+            <div>réponse automatisée</div>
+            <button onClick={() => response(triggers, robotAnswers, input)}>PRESS</button>
+            <button onClick={() => console.log(messages)}>CONFIRM</button>
         </div>
-      );
-    };
+
+      )
+    }
     
     export default ChatBot;

@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import Cards from './Cards'
 
-const Filtre = ({select, setCharactersTabFiltered}) => {
+
+const Filtre = ({select, setCharactersTabFiltered, nameDisplay}) => {
+
 
     const [characters, setCharacters] = useState([])
     
@@ -34,8 +36,10 @@ const Filtre = ({select, setCharactersTabFiltered}) => {
 
     return (
         <div>
+
             <select name={select} value={valueFiltered} onChange={dataValueFunc}>
-                <option value="">{select}...</option>
+                <option value="">{nameDisplay}...</option>
+
                 {selectedFilter.map((data) => {
                 return <option value={data}>{data}</option>
                 })}             

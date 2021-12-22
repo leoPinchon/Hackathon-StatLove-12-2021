@@ -16,11 +16,13 @@ export default function Cards({ charactersTabFiltered }) {
   );
   // setCharacterCurrent(characterCurrent[0]),[])
 
+
   const changeCharacter = () => {
     let count = Math.floor(Math.random() * charactersTabFiltered.length);
     console.log("poulet", charactersTabFiltered);
     setCharacterCurrent(charactersTabFiltered[count]);
   };
+
 
   return (
     <div className="card-section">
