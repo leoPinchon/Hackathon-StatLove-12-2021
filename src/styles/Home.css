@@ -1,7 +1,6 @@
 body {
 background: rgb(54,13,65);
 background: linear-gradient(161deg, rgba(54,13,65,1) 44%, rgba(154,57,115,1) 100%);
-overflow: hidden;
 }
 
 .home {
@@ -10,6 +9,7 @@ overflow: hidden;
     justify-content: flex-start;
     width: 100vw;
     height: 100vh;
+    
 }
 
 .home-nav {

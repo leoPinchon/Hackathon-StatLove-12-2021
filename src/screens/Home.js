@@ -25,6 +25,7 @@ export default function Home() {
         <div className="home">
             <nav className="home-nav">
                 <h1 className="home-nav-title">SATURDAY<br/>NIGHT<br/>ROULETTE</h1>
+                
                 <div className="home-nav-input">
                     <input className="home-nav-input_id" type="text" name="" placeholder="Identifiant"></input>
                     <input className="home-nav-input_password" type="password" name="" placeholder="Mot de passe"></input>
@@ -35,10 +36,14 @@ export default function Home() {
                     </p>
                 </ div>
                 <Link to="/KnowMore" onClick={knowActive=!knowActive} className={knowActive ? "KnowMore" : "KnowMoreActive"}><img className="home-nav-down" src={Down} alt="down"></img></Link>
+                
             </nav>
+            
             <Outlet />
+            
             <img className="home-nav-galaxy" src={Galaxy} alt="galaxy" ></img>
             <img className="home-nav-vaisseau" src={Vaisseau} alt="vaisseau" ref={boxRef}></img>
+            
 
             
 
