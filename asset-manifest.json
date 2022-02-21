@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Hackthon-1-StarLove/static/css/main.07548d02.css",
+    "main.js": "/Hackthon-1-StarLove/static/js/main.67d3f6cc.js",
+    "static/js/787.c2a31f11.chunk.js": "/Hackthon-1-StarLove/static/js/787.c2a31f11.chunk.js",
+    "static/media/galaxy01.png": "/Hackthon-1-StarLove/static/media/galaxy01.83911b577948e831b35f.png",
+    "static/media/404.gif": "/Hackthon-1-StarLove/static/media/404.3bb427238b5ee46deb85.gif",
+    "index.html": "/Hackthon-1-StarLove/index.html",
+    "main.07548d02.css.map": "/Hackthon-1-StarLove/static/css/main.07548d02.css.map",
+    "main.67d3f6cc.js.map": "/Hackthon-1-StarLove/static/js/main.67d3f6cc.js.map",
+    "787.c2a31f11.chunk.js.map": "/Hackthon-1-StarLove/static/js/787.c2a31f11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07548d02.css",
+    "static/js/main.67d3f6cc.js"
+  ]
+}
